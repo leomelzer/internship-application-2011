@@ -5,14 +5,30 @@
   %link{:href => 'http://fonts.googleapis.com/css?family=Vollkorn:italic', :rel => 'stylesheet'}
   :css
     body { font-family: 'Vollkorn', arial, serif; font-style: italic; }
-    #wrapper { position: absolute; bottom: 50px; right: 50px; }
+    #wrapper { position: absolute; bottom: 5%; right: 5%; }
     h1 { font-size: 48px }
     h1, h2, p { margin: 0 0 10px }
+    #teaser { position: absolute; top: 20%; left: 0; width: 100%; }
+    #teaser p { font-size: 48px; padding: 20px; background-color: #E40045; color: #fff; }
+    a { color: #ff9970; font-weight: bold; text-decoration: underline; }
+    a:hover { text-decoration: none; }
+  :javascript
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21992230-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 %body
   #wrapper
     %h1 foomoo.de
     %h2 all new - somewhen soon.
     %p
       follow me on twitter,
-      %a{:href => 'http://twitter.com/leomelzer'}
-        @leomelzer
+      %a{:href => 'http://twitter.com/leomelzer'} @leomelzer
+  #teaser
+    %p
+      In the meanwhile, check out
+      %a{:href => 'http://runningcode.heroku.com'} Running Code
