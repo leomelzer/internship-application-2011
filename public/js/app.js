@@ -239,6 +239,16 @@ $(document).ready(function() {
 		timeout : 5000
 	});
 	
+	$('#hired').append($('<a/>', {
+		href: '#',
+		text: 'Show me what this is about anyway.',
+		'class' : 'reveal',
+		click: function(e) {
+			e.stopPropagation();
+			$('#hired').hide(600);
+		}
+	}));
+	
 	/* thanks, @rem - http://remysharp.com/2010/08/24/dynamic-favicons/ */
 	var canvas = document.createElement('canvas'),
 	    ctx,

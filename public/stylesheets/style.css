@@ -290,6 +290,43 @@ p.signature {
 	height: 142px;
 }
 
+#hired {
+	position: fixed;
+	left: 0;
+	top: 0;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .8);
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	z-index: 1000;
+}
+
+#hired h1 {
+	border-top: 20px dashed rgba(237, 9, 72, .7);
+	background: url(../images/pattern.png) left top repeat #fff;
+	margin-top: 20%;
+	text-transform: uppercase;
+	font-size: 72px;
+	line-height: 1.2;
+}
+
+#hired h2 {
+	margin-bottom: 8px;
+	background: url(../images/pattern.png) left top repeat #fff;
+	border-bottom: 20px dashed rgba(237, 9, 72, .7);
+}
+
+.reveal {
+	padding: 10px;
+	background-color: rgba(54, 17, 60, .2);
+	color: #fff;
+	font-weight: bold;
+}
+
+.reveal:link, .reveal:visited {
+	color: #fff;
+}
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
